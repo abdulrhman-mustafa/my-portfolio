@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+.text-medium {
+    font-weight: 600;
+}
+/* Projects */
+.projects a:hover .arrow,
+.about a:hover .arrow,
+.testimonials a:hover .arrow,
+.contact a:hover .arrow {
+    transform: translateX(5px);
+    -webkit-transform: translateX(5px);
+    -moz-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    -o-transform: translateX(5px);
+}
+
+.projects .dividerLine,
+.about .dividerLine,
+.testimonials .dividerLine,
+.contact .dividerLine {
+    height: 3px;
+    width: 140px;
+    background: linear-gradient(90deg, white, transparent);
+    border-radius: 3px;
+    text-align: start;
+}
+.about-me .nav li.active::before {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    left: 0;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: white;
+}
+
+.experience .content li::before,
+.education .content li::before,
+.certifications .content li::before {
+    content: '\279C';
+    position: absolute;
+    left: 0px;
+    color: white;
+    
+}
