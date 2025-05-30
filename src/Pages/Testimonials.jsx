@@ -20,7 +20,7 @@ const Testimonials = () => {
                 <div className="box rounded-2xl p-6 bg-zinc-900 hover:bg-zinc-700 transition-colors [box-shadow:0_-20px_80px_-40px_#ffffff3f_inset,0_0_20px_-5px_rgba(255,255,255,0.1)]">
                     <div className="info flex items-center justify-between">
                         <div className="image flex items-center gap-3">
-                            <img className="w-14 h-14 border-2 border-zinc-600 rounded-full" src={p1} alt="person" />
+                            <img className="w-14 h-14 border-2 border-zinc-600 object-cover rounded-full" src={p1} alt="person" loading="lazy"/>
                             <h2 className="text-zinc-100 font-semibold text-lg">Cleyton Leite</h2>
                         </div>
                         <div className="icon">
@@ -32,7 +32,7 @@ const Testimonials = () => {
                 <div className="box rounded-2xl p-6 bg-zinc-900 hover:bg-zinc-700 transition-colors [box-shadow:0_-20px_80px_-40px_#ffffff3f_inset,0_0_20px_-5px_rgba(255,255,255,0.1)]">
                     <div className="info flex items-center justify-between">
                         <div className="image flex items-center gap-3">
-                            <img className="w-14 h-14 border-2 border-zinc-600 rounded-full" src={p2} alt="person" />
+                            <img className="w-14 object-cover h-14 border-2 border-zinc-600 rounded-full" src={p2} alt="person" loading="lazy" />
                         <h2 className="text-zinc-100 font-semibold text-lg">Toni Dumančić</h2>
                         </div>
                         <div className="icon">
@@ -44,7 +44,7 @@ const Testimonials = () => {
                 <div className="box rounded-2xl p-6 bg-zinc-900 hover:bg-zinc-700 transition-colors [box-shadow:0_-20px_80px_-40px_#ffffff3f_inset,0_0_20px_-5px_rgba(255,255,255,0.1)]">
                     <div className="info flex items-center justify-between">
                         <div className="image flex items-center gap-3">
-                            <img className="w-14 h-14 border-2 border-zinc-600 rounded-full" src={p4} alt="person" />
+                            <img className="w-14 h-14 object-cover border-2 border-zinc-600 rounded-full" src={p4} alt="person" loading="lazy"/>
                             <h2 className="text-zinc-100 font-semibold text-lg">Siyam Hosan</h2>
                         </div>
                         <div className="icon">

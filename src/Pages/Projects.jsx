@@ -17,8 +17,8 @@ const Projects = () => {
             </div>
             <div className="box-holder grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-8">
                     <div className="box border flex flex-col border-zinc-800 rounded-xl">
-                        <div className="box-img">
-                            <img className="w-full h-[265px] rounded-t-xl" src={host} alt="host" />
+                        <div className="box-img w-full h-full">
+                            <img className="object-cover rounded-t-xl" src={host} alt="host" loading="lazy" />
                         </div>
                         <div className="box-title p-4">
                             <h2 className="text-zinc-100 font-bold text-xl">Eco-Hosting</h2>
@@ -47,8 +47,8 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="box border flex flex-col border-zinc-800 rounded-xl">
-                        <div className="box-img">
-                            <img className="w-full h-[260px] rounded-t-xl" src={foodwagon} alt="foodwagon" />
+                        <div className="box-img w-full h-full ">
+                            <img className="object-cover rounded-t-xl" src={foodwagon} alt="foodwagon" loading="lazy"/>
                         </div>
                         <div className="box-title p-4">
                             <h2 className="text-zinc-100 font-bold text-xl">FoodwaGon</h2>
