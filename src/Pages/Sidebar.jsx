@@ -31,10 +31,10 @@ const Sidebar = () => {
                         </div>
                     </div>
 
-                    <div className="tech-stack max-lg:mt-6 lg:mt-8 w-full overflow-hidden">
+                    <div className="tech-stack max-lg:mt-6 lg:mt-8 w-full ">
                         <h3 className="text-white font-medium hidden lg:flex text-xl mb-2">Tech Stack</h3>
-                        <div className="flex overflow-x-auto scrollbar-hide pb-2">
-                            <div className="flex lg:flex-wrap gap-2">
+                        <div className="flex pb-2">
+                            <div className="flex custom-scrollbar lg:flex-wrap gap-2">
                                 <div className="bg-zinc-800/50 rounded-xs flex items-center justify-around max-lg:text-xs lg:text-sm font-medium px-4 max-lg:py-1 lg:py-2 gap-4 whitespace-nowrap">
                                     <p className="text-zinc-100 flex items-center"><DiReact className='lg:hidden block me-1 text-[16px]'/>React.js</p>
                                 </div>

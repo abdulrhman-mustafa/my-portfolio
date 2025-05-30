@@ -14,7 +14,7 @@ const Navbar = () => {
                 </ul>
             </nav> */}
             <nav className="p-5 lg:hidden flex border-b border-neutral-800">
-                <ul className="lg:hidden flex space-x-4 max-sm:text-xs">
+                <ul className="lg:hidden flex space-x-1 max-sm:mx-auto max-sm:text-xs">
 
                     <li>
                         <NavLink to="/projects" end className={({ isActive }) =>

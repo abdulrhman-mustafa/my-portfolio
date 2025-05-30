@@ -7,13 +7,13 @@ import Certifications from '../Pages/Certifications';
 import Projects from '../Pages/Projects';
 import Testimonials from '../Pages/Testimonials';
 import Contact from '../Pages/Contact';
-import { BrowserRouter, Routes, Route } from 'react-router';
+import { HashRouter , Routes, Route } from 'react-router';
 
 
 const App = () => {
   return (
     <div className="app bg-zinc-950">
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path="/" element={<Layout />}>
               <Route index={true} element={<Projects />}></Route>
@@ -28,7 +28,7 @@ const App = () => {
               <Route path="/contact" element={<Contact/>}></Route>
             </Route>
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
     </div>
   );
 }

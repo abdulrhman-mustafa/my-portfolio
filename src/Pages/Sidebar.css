@@ -23,8 +23,6 @@
     
 }
 
-
-
 .links a{
     transition: 0.2s ease-in;
     -webkit-transition: 0.2s ease-in;
@@ -40,10 +38,21 @@
     -o-transform: scale(1.2);
 }
 
-.scrollbar-hide::-webkit-scrollbar {
-    display: none;
+.custom-scrollbar {
+    overflow-x: auto;
+    padding: 20px 0;
 }
-.scrollbar-hide {
-    -ms-overflow-style: none; /* لـ Internet Explorer و Edge */
-    scrollbar-width: none; /* لـ Firefox */
+.custom-scrollbar::-webkit-scrollbar {
+    height: 15px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #27272a80;
+    border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #6e6e6e8a;
 }
