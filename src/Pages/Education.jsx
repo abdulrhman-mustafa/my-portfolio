@@ -1,8 +1,12 @@
 import React from 'react';
-
+import { motion } from 'motion/react';
 const Education = () => {
     return (
-        <div className="education">
+        <motion.div 
+        initial = {{x: 40, opacity:0}} 
+        animate = {{x: 0, opacity:1}}
+        transition= {{duration:1.5}}
+        className="education">
             <div className="content text-zinc-100">
                 <h1 className="text-zinc-100 max-lg:text-2xl lg:text-4xl font-bold mb-3">B.Sc. in Information Technology – Software Engineering</h1>
                 <strong>Borg El Arab Technological University</strong> · Faculty of Technology for Industry & Energy
@@ -13,7 +17,7 @@ const Education = () => {
                     <li className="text-zinc-400 relative pl-7">Completed hands-on projects and technical training as part of the academic program.</li>
                 </ul>
             </div>
-        </div>
+        </motion.div>
     );
 }
 

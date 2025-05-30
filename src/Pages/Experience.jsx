@@ -1,8 +1,12 @@
 import React from 'react';
-
+import { motion } from 'motion/react';
 const Experience = () => {
     return (
-        <div className="experience">
+        <motion.div 
+            initial = {{x: 40, opacity:0}} 
+            animate = {{x: 0, opacity:1}}
+            transition= {{duration:1.5}}
+            className="experience">
             <div className="content text-zinc-100">
                 <h1 className="text-zinc-100 lg:text-4xl max-lg:text-2xl font-bold mb-3">Freelance Front-End Developer</h1>
                 <p className="text-zinc-400 mb-7">Self-Employed · Remote · dec 2024 – Present</p>
@@ -14,7 +18,7 @@ const Experience = () => {
                     <li className="text-zinc-400 relative pl-7">Gained solid experience in independent project management, client communication, and meeting deadlines efficiently.</li>
                 </ul>
             </div>
-        </div>
+        </motion.div>
     );
 }
 

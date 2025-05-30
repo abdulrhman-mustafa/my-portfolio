@@ -1,9 +1,13 @@
 import React from 'react';
 import { IoIosStar } from "react-icons/io";
-
+import { motion } from 'motion/react';
 const Certifications = () => {
     return (
-        <div className="certifications">
+        <motion.div 
+        initial = {{x: 40, opacity:0}} 
+        animate = {{x: 0, opacity:1}}
+        transition= {{duration:1.5}}
+        className="certifications">
             <div className="content text-zinc-100">
                 <h1 className="text-zinc-100 max-lg:text-2xl lg:text-4xl font-bold mb-3">Certifications</h1>
                     
@@ -33,7 +37,7 @@ const Certifications = () => {
                         </ul>
                     </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
 

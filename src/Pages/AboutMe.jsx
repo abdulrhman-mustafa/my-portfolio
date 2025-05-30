@@ -1,10 +1,15 @@
 import React from 'react';
 import { NavLink, Outlet } from 'react-router';
+import { motion } from "motion/react"
 
 const AboutMe = () => {
     const baseClass = "font-medium hover:text-zinc-100 transition-colors uppercase px-5 py-2  border-l-4";
     return (
-            <div className="about relative lg:p-8 max-lg:p-5 lg:h-screen lg:bg-zinc-950 lg:ml-80 lg:flex-1">
+            <motion.div 
+                initial = {{y:400, opacity:0}} 
+                animate = {{y:0, opacity:1}}
+                transition= {{duration:1}}
+                className="about relative lg:p-8 max-lg:p-5 lg:h-screen lg:bg-zinc-950 lg:ml-80 lg:flex-1">
                 <div className="hidden md:flex items-center justify-between">
                     <div className="title">
                         <h1 className="text-zinc-100 text-4xl font-bold mb-3">About Me</h1>
@@ -50,7 +55,7 @@ const AboutMe = () => {
                         <Outlet />
                     </div>
                 </div>
-        </div>
+            </motion.div>
     );
 }
 
