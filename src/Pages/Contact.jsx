@@ -87,18 +87,18 @@ const handleSubmit = async (e) => {
                     <div className="image">
                         <img src={formImage} className=" object-cover" alt="form" loading='lazy'/>
                     </div>
-                    <div className="gap-10 flex flex-col items-start pt-10">
+                    <div className="gap-10 flex flex-col items-start">
                         <div className="flex items-center justify-center gap-2">
-                            <MdLocationPin className='text-zinc-400 text-xl font-bold' />
-                            <p className="text-zinc-400">Alex, Egypt</p>
+                            <MdLocationPin className='text-zinc-400 text-2xl font-bold' />
+                            <p className="text-zinc-400 max-md:text-xs">Alex, Egypt</p>
                         </div>
                         <div className="flex items-center justify-center gap-2">
-                            <MdOutlineWhatsapp className='text-zinc-400 text-xl font-bold' />
-                            <p className="text-zinc-400">+201002603554</p>
+                            <MdOutlineWhatsapp className='text-zinc-400 text-2xl font-bold' />
+                            <p className="text-zinc-400 max-md:text-xs">+201002603554</p>
                         </div>
                         <div className="flex items-center justify-center gap-2">
-                            <HiOutlineMail className='text-zinc-400 text-xl font-bold' />
-                            <p className="text-zinc-400">abdurahmanmustafa2910@gmail.com</p>
+                            <HiOutlineMail className='text-zinc-400 text-2xl font-bold' />
+                            <p className="text-zinc-400 max-md:text-xs">abdurahmanmustafa2910@gmail.com</p>
                         </div>
                     </div>
                 </div>
