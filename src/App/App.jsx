@@ -7,7 +7,7 @@ import Certifications from '../Pages/Certifications';
 import Projects from '../Pages/Projects';
 import Testimonials from '../Pages/Testimonials';
 import Contact from '../Pages/Contact';
-import { HashRouter , Routes, Route } from 'react-router';
+import { HashRouter , Routes, Route, Navigate } from 'react-router';
 
 
 const App = () => {
@@ -16,10 +16,10 @@ const App = () => {
         <HashRouter>
           <Routes>
             <Route path="/" element={<Layout />}>
-              <Route index={true} element={<Projects />}></Route>
+              <Route index element={<Navigate to="projects" replace />}></Route>
               <Route path="/projects" element={<Projects/>}></Route>
               <Route path="/about" element={<AboutMe />}>
-                <Route index={true} element={<Experience/>} />
+                <Route index element={<Navigate to="experience" replace />} />
                 <Route path="experience" element={<Experience/>} />
                 <Route path="education" element={<Education/>} />
                 <Route path="certifications" element={<Certifications/>} />
