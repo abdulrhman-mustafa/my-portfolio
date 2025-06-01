@@ -12,8 +12,7 @@ import Certifications from '../Pages/Certifications';
 // import Projects from '../Pages/Projects';
 // import Testimonials from '../Pages/Testimonials';
 // import Contact from '../Pages/Contact';
-import { HashRouter , Routes, Route, Navigate } from 'react-router';
-import { AnimatePresence } from "framer-motion";
+import { HashRouter , Routes, Route, Navigate } from 'react-router-dom';
 import { BeatLoader } from 'react-spinners';
 
 const App = () => {
@@ -21,22 +20,20 @@ const App = () => {
     <div className="app bg-zinc-950 overflow-hidden">
         <Suspense fallback={<div className='w-full h-screen bg-zinc-95 flex items-center justify-center'><BeatLoader color="#fff" /></div>}>
           <HashRouter>
-            <AnimatePresence mode="wait">
             <Routes>
               <Route path="/" element={<Layout />}>
                 <Route index element={<Navigate to="projects" replace />}></Route>
-                <Route path="/projects" element={<Projects/>}></Route>
-                <Route path="/about" element={<AboutMe />}>
+                <Route path="projects" element={<Projects/>}></Route>
+                <Route path="about" element={<AboutMe />}>
                   <Route index element={<Navigate to="experience" replace />} />
                   <Route path="experience" element={<Experience/>} />
                   <Route path="education" element={<Education/>} />
                   <Route path="certifications" element={<Certifications/>} />
                 </Route>
-                <Route path="/testimonials" element={<Testimonials/>}></Route>
-                <Route path="/contact" element={<Contact/>}></Route>
+                <Route path="testimonials" element={<Testimonials/>}></Route>
+                <Route path="contact" element={<Contact/>}></Route>
               </Route>
             </Routes>
-            </AnimatePresence>
           </HashRouter>
         </Suspense>
     </div>

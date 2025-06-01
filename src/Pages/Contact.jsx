@@ -1,10 +1,11 @@
 import React from 'react';
 import {HiOutlineMail} from "react-icons/hi"
-import { MdOutlineWhatsapp, MdLocationPin, MdEmail  } from "react-icons/md";
+import { MdOutlineWhatsapp, MdLocationPin  } from "react-icons/md";
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
 import './alert.css'
 import formImage from '../assets/3D-character_.png'
+import { motion } from 'framer-motion';
 const Contact = () => {
 
 const handleSubmit = async (e) => {
@@ -59,12 +60,20 @@ const handleSubmit = async (e) => {
 
 
     return (
-        <div className="contact text-zinc-100 lg:p-8 max-lg:p-5 bg-zinc-950 lg:ml-80 lg:flex-1">
-            <div className="touch py-5 flex flex-col items-center justify-center">
+        <div className="contact text-zinc-100 lg:p-8 max-lg:p-5 max-lg:mx-auto bg-zinc-950 lg:ml-80 lg:flex-1">
+            <motion.div 
+            initial={{y: -50, opacity: 0 }}
+            animate={{y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="touch py-5 flex flex-col items-center justify-center">
                 <h1 className="getInTouch text-3xl font-bold mb-3">Get In Touch</h1>
                 <div className="dividerLine" aria-hidden="true"></div>
-            </div>
-            <div className="lg:flex max-lg:flex-col lg:justify-between bg-zinc-800 rounded-xl [box-shadow:0_-20px_80px_-40px_#ffffff3f_inset,0_0_20px_-5px_rgba(255,255,255,0.1)]">
+            </motion.div>
+            <motion.div 
+            initial={{y: 200, opacity: 0 }}
+            animate={{y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="lg:flex max-lg:flex-col lg:justify-between bg-zinc-800 rounded-xl [box-shadow:0_-20px_80px_-40px_#ffffff3f_inset,0_0_20px_-5px_rgba(255,255,255,0.1)]">
                 <form onSubmit={handleSubmit} className=' max-lg:w-full lg:w-2/3 mb-14 py-10 px-5 rounded-xl flex flex-col gap-4'>
                     <h1 className="getInTouch text-xl font-medium mb-3">Send Me a Message</h1>
                     <div className="name flex flex-col">
@@ -102,7 +111,7 @@ const handleSubmit = async (e) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 }

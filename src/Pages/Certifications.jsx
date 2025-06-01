@@ -1,6 +1,6 @@
 import React from 'react';
 import { IoIosStar } from "react-icons/io";
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 const Certifications = () => {
     return (
         <motion.div 

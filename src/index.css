@@ -51,3 +51,25 @@
     left: 0px;
     color: white;
 }
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #09090b; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #34343880;
+    border-radius:10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #6866668a; 
+}

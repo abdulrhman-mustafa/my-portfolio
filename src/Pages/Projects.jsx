@@ -3,19 +3,27 @@ import host from '../assets/ico-hosting.png'
 import foodwagon from '../assets/foodwagon.png'
 import { RiGlobalLine } from "react-icons/ri";
 import { FaGithub, FaArrowRight} from "react-icons/fa";
-
+import { motion } from 'framer-motion';
 const Projects = () => {
     return (
         <div className="projects lg:p-8 max-lg:p-5 lg:h-screen lg:bg-zinc-950 lg:ml-80 lg:flex-1">
-            <div className="hidden md:flex items-center justify-between">
+            <motion.div 
+            initial={{y: -50, opacity: 0 }}
+            animate={{y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="hidden md:flex items-center justify-between">
                     <div className="title">
                         <h1 className="text-zinc-100 text-4xl font-bold mb-3">My Projects</h1>
                         <div className="dividerLine" aria-hidden="true"></div>
                         <p className="text-zinc-400 my-3">Here’s a showcase of some projects I’ve completed for clients.</p>
                     </div>
                     <a href="" className="text-zinc-400 flex items-center justify-center gap-2 hover:text-white transition-colors"><span>View More</span><div className="arrow transition duration-300"><FaArrowRight /></div></a>
-            </div>
-            <div className="box-holder grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-8">
+            </motion.div>
+            <motion.div
+            initial={{y: 200, opacity: 0 }}
+            animate={{y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="box-holder grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-8">
                     <div className="box border flex flex-col border-zinc-800 rounded-xl">
                         <div className="box-img w-full h-full">
                             <img className="object-cover rounded-t-xl" src={host} alt="host" loading="lazy" />
@@ -73,7 +81,7 @@ const Projects = () => {
                             <a className="text-zinc-800 bg-zinc-100 flex items-center px-2 py-1 rounded text-sm" href="https://github.com/abdulrhman-mustafa/foodWagon1.git" target="_blank"><FaGithub className='me-2'/>Source</a>
                         </div>
                     </div>
-            </div>
+            </motion.div>
         </div>
     );
 }

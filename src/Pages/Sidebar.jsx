@@ -10,6 +10,7 @@ import { BiLogoTypescript, BiLogoJavascript, BiLogoFigma } from "react-icons/bi"
 import { FiLinkedin, FiGithub } from "react-icons/fi";
 import Navbar from '../Components/Navbar';
 const Sidebar = () => {
+
     return (
             <div className="sidebar lg:fixed lg:left-0 lg:top-0 lg:h-screen lg:w-80 lg:bg-zinc-900 text-zinc-100 lg:p-6 max-lg:px-5 max-lg:py-6 lg:[box-shadow:0_-20px_80px_-40px_#ffffff3f_inset,0_0_20px_-5px_rgba(255,255,255,0.1)] ">
                 <div className="sidebar-info flex flex-col">
@@ -20,7 +21,7 @@ const Sidebar = () => {
                         <div className="name flex flex-col lg:justify-center lg:items-center lg:mb-4 space-y-1">
                                 <h3 className="text-zinc-100 font-bold lg:text-2xl max-lg:text-xl">Abdulrahman Mustafa</h3>
                                 <p className="lg:hidden items-center flex"> <CiLocationOn className='me-1' /><span className="text-zinc-400">Alex, Egypt</span></p>
-                                <p className="text-zinc-400">Frontend Developer</p>
+                                <p className="text-zinc-400">Front-End Developer</p>
                         </div>
                         <div className="status flex items-center lg:justify-center p-4 max-lg:my-3">
                             <div className="bg-zinc-800/70 rounded-full flex items-center justify-around max-lg:px-2 lg:px-4 max-lg:py-1 lg:py-2 max-lg:gap-2 lg:gap-4">

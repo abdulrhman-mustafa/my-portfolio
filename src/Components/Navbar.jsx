@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const baseClass = "font-medium hover:text-zinc-100 transition-colors uppercase px-1 py-2 border-b-2";
