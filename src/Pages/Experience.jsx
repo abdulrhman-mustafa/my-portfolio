@@ -6,7 +6,7 @@ const Experience = () => {
             initial = {{x: 40, opacity:0}} 
             animate = {{x: 0, opacity:1}}
             transition= {{duration:1.5}}
-            className="experience">
+            className="experience xl:absolute xl:top-50 xl:left-60 lg:p-8 max-lg:p-5 lg:ml-80 lg:flex-1">
             <div className="content text-zinc-100">
                 <h1 className="text-zinc-100 lg:text-4xl max-lg:text-2xl font-bold mb-3">Freelance Front-End Developer</h1>
                 <p className="text-zinc-400 mb-7">Self-Employed · Remote · dec 2024 – Present</p>

@@ -8,7 +8,7 @@ import { FiFacebook, FiLinkedin, FiGithub } from "react-icons/fi";
 import { motion } from 'framer-motion';
 const Testimonials = () => {
     return (
-        <div className="testimonials lg:p-8 max-lg:p-5 lg:h-screen lg:bg-zinc-950 lg:ml-80 lg:flex-1">
+        <div className="testimonials max-lg:p-5 lg:ml-80 lg:flex-1">
             <motion.div 
             initial={{y: -50, opacity: 0 }}
             animate={{y: 0, opacity: 1 }}

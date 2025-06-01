@@ -6,7 +6,7 @@ import { FaGithub, FaArrowRight} from "react-icons/fa";
 import { motion } from 'framer-motion';
 const Projects = () => {
     return (
-        <div className="projects lg:p-8 max-lg:p-5 lg:h-screen lg:bg-zinc-950 lg:ml-80 lg:flex-1">
+        <div className="projects max-lg:p-5 lg:ml-80 lg:flex-1">
             <motion.div 
             initial={{y: -50, opacity: 0 }}
             animate={{y: 0, opacity: 1 }}

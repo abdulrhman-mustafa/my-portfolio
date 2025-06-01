@@ -4,6 +4,9 @@
 * {
     font-family: "Roboto", sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 .text-medium {
     font-weight: 600;
 }

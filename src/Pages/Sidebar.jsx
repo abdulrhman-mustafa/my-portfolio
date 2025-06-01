@@ -16,7 +16,7 @@ const Sidebar = () => {
                 <div className="sidebar-info flex flex-col">
                     <div className="info">
                         <div className="avatar border-zinc-600 rounded-full lg:flex lg:items-center lg:justify-center my-4">
-                            <img className="lg:w-30 lg:h-30 object-cover max-lg:w-22 max-lg:h-22 p-1 border-2 text-zinc-600 rounded-full" src={avatar} alt="avatar" loading="lazy" />
+                            <img className="lg:w-30 lg:h-30 object-cover max-lg:w-22 max-lg:h-22 p-1 border-2 text-zinc-600 rounded-full" src={avatar} alt="Profile picture of Abdulrahman Mustafa" loading="lazy" />
                         </div>
                         <div className="name flex flex-col lg:justify-center lg:items-center lg:mb-4 space-y-1">
                                 <h3 className="text-zinc-100 font-bold lg:text-2xl max-lg:text-xl">Abdulrahman Mustafa</h3>

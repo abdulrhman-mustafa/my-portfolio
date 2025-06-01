@@ -29,7 +29,7 @@ const handleSubmit = async (e) => {
             'service_bdqgzmk', // Service ID
             'template_batm61b', // Contact Template ID
             e.target,
-            'nwCRjWjVWLHk7qmrJ' // Public Key
+            process.env.REACT_APP_EMAILJS_PUBLIC_KEY // Public Key
         );
         console.log('Success:', result.text);
         const name = e.target.name.value; //  Get the name value
@@ -60,12 +60,12 @@ const handleSubmit = async (e) => {
 
 
     return (
-        <div className="contact text-zinc-100 lg:p-8 max-lg:p-5 max-lg:mx-auto bg-zinc-950 lg:ml-80 lg:flex-1">
+        <div className="contact text-zinc-100 max-lg:p-5 max-lg:mx-auto pb-15 lg:ml-80 lg:flex-1">
             <motion.div 
             initial={{y: -50, opacity: 0 }}
             animate={{y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="touch py-5 flex flex-col items-center justify-center">
+            className="touch py-5 flex flex-col items-center justify-center mb-8">
                 <h1 className="getInTouch text-3xl font-bold mb-3">Get In Touch</h1>
                 <div className="dividerLine" aria-hidden="true"></div>
             </motion.div>
@@ -88,7 +88,7 @@ const handleSubmit = async (e) => {
                         <label className="mb-3" htmlFor="message">Message</label>
                         <textarea className='bg-zinc-900 border-0 outline-0 px-4 py-3 rounded-xl resize-none' name="message" id="message" required cols="30" rows="10" placeholder='Your Message'></textarea>
                     </div>
-                    <button type='submit' className='flex items-center justify-center w-38 mx-auto rounded-xl bg-zinc-900 px-4 py-3 border-2 border-transparent  gap-2 hover:bg-transparent hover:border-2 hover:border-zinc-400 transition-all cursor-pointer'>Submit <div className="arrow transition duration-300"><HiOutlineMail /></div></button>
+                    <button type="submit" aria-label="Submit contact form" className='flex items-center justify-center w-38 mx-auto rounded-xl bg-zinc-900 px-4 py-3 border-2 border-transparent  gap-2 hover:bg-transparent hover:border-2 hover:border-zinc-400 transition-all cursor-pointer'>Submit <div className="arrow transition duration-300"><HiOutlineMail /></div></button>
                 </form>
                 <div className="contact-info  bg-zinc-950 max-lg:w-full lg:w-1/2 flex flex-col gap-4 px-5 py-10">
                     <h1 className="getInTouch text-xl font-medium mb-3">Contact Information</h1>
