@@ -17,18 +17,9 @@ const AppRoutes = ({ isLargeScreen }) => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  useEffect(() => {
+useEffect(() => {
     if (isLargeScreen) {
-      const smallRoutes = [
-        '/projects',
-        '/about',
-        '/about/experience',
-        '/about/education',
-        '/about/certifications',
-        '/testimonials',
-        '/contact',
-      ];
-      if (smallRoutes.includes(location.pathname)) {
+      if (!location.pathname.startsWith('/about')) {
         navigate('/', { replace: true });
       }
     }

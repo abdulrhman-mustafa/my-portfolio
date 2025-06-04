@@ -2,8 +2,8 @@ import React from 'react';
 import { RiGlobalLine } from 'react-icons/ri';
 import { FaGithub } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import host from '../assets/ico-hosting.png';
-import foodwagon from '../assets/foodwagon.png';
+import host from '../assets/ico-hosting.webp';
+import foodwagon from '../assets/foodwagon.webp';
 
 const containerVariants = {
     hidden: { y: -50, opacity: 0 },

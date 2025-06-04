@@ -1,5 +1,5 @@
 import React from 'react';
-import avatar from '../assets/avatar.jpg'
+import avatar from '../assets/avatar.webp'
 import Cv from '../assets/myCv.pdf'
 import './Sidebar.css'
 import { CiLocationOn } from "react-icons/ci";
