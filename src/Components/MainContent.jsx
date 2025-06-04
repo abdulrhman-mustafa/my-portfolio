@@ -22,12 +22,12 @@ const MainContent = () => {
     return (
         <section className="main-content  p-10 space-y-20">
             <Sidebar />
-            {location.pathname.includes('/about') && (
+            {(location.pathname === '/' || location.pathname.includes('/about')) && (
                 <div id="about">
-                <AboutMe />
-                <div className="about-inner-section">
-                    {renderAboutSection()}
-                </div>
+                    <AboutMe />
+                    <div className="about-inner-section">
+                        {renderAboutSection()}
+                    </div>
                 </div>
             )}
             <Projects />

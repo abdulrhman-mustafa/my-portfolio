@@ -10,7 +10,56 @@ import { BiLogoTypescript, BiLogoJavascript, BiLogoFigma } from "react-icons/bi"
 import { FiLinkedin, FiGithub } from "react-icons/fi";
 import Navbar from '../Components/Navbar';
 const Sidebar = () => {
-
+    const styleIcon = "lg:hidden block me-1 text-[16px] text-zinc-100";
+    const techStack = [
+        {
+            name: 'React',
+            icon: <DiReact className={styleIcon} />
+        },
+        {
+            name: 'Tailwind CSS',
+            icon: <RiTailwindCssFill className={styleIcon} />
+        },
+        {
+            name: 'Next.js',
+            icon: <RiNextjsFill className={styleIcon} />
+        },
+        {
+            name: 'Bootstrap',
+            icon: <RiBootstrapFill className={styleIcon} />
+        },
+        {
+            name: 'Redux',
+            icon: <SiRedux className={styleIcon} />
+        },
+        {
+            name: 'Sass',
+            icon: <SiSass className={styleIcon} />
+        },
+        {
+            name: 'Framer Motion',
+            icon: <SiFramer className={styleIcon} />
+        },
+        {
+            name: 'Typescript',
+            icon: <BiLogoTypescript className={styleIcon} />
+        },
+        {
+            name: 'Javascript',
+            icon: <BiLogoJavascript className={styleIcon} />
+        },
+        {
+            name: 'Figma',
+            icon: <BiLogoFigma className={styleIcon} />
+        },
+    ]
+    const stackElement = techStack.map((tech, index) => {
+        return (
+            <div key={index} className="stack bg-zinc-800/50 rounded-xs flex items-center justify-around max-lg:text-xs lg:text-sm font-medium px-4 max-lg:py-1 gap-2 py-1 whitespace-nowrap">
+                <p className="text-zinc-100 flex items-center">{tech.icon} {tech.name}</p>
+            </div>
+        )
+    })
     return (
             <div className="sidebar lg:fixed lg:left-0 lg:top-0 lg:h-screen lg:w-80 lg:bg-zinc-900 text-zinc-100 lg:p-6 max-lg:px-5 max-lg:py-6 lg:[box-shadow:0_-20px_80px_-40px_#ffffff3f_inset,0_0_20px_-5px_rgba(255,255,255,0.1)] ">
                 <div className="sidebar-info flex flex-col">
@@ -35,37 +84,8 @@ const Sidebar = () => {
                     <div className="tech-stack w-full ">
                         <h3 className="text-white font-medium hidden lg:flex text-xl mb-1">Tech Stack</h3>
                         <div className="flex">
-                            <div className="flex custom-scrollbar lg:flex-wrap gap-2">
-                                <div className="bg-zinc-800/50 rounded-xs flex items-center justify-around max-lg:text-xs lg:text-sm font-medium px-4 max-lg:py-1 gap-2 py-1 whitespace-nowrap">
-                                    <p className="text-zinc-100 flex items-center"><DiReact className='lg:hidden block me-1 text-[16px]'/>React.js</p>
-                                </div>
-                                <div className="bg-zinc-800/50 rounded-xs flex items-center justify-around max-lg:text-xs lg:text-sm font-medium px-4 max-lg:py-1 gap-2 py-1 whitespace-nowrap">
-                                    <p className="text-zinc-100 flex items-center"><RiNextjsFill className='lg:hidden block me-1 text-[16px]' />Next.js</p>
-                                </div>
-                                <div className="bg-zinc-800/50 rounded-xs flex items-center justify-around max-lg:text-xs lg:text-sm font-medium px-4 max-lg:py-1 gap-2 py-1 whitespace-nowrap">
-                                    <p className="text-zinc-100 flex items-center"><SiRedux className='lg:hidden block me-1 text-[16px]'/>Redux</p>
-                                </div>
-                                <div className="bg-zinc-800/50 rounded-xs flex items-center justify-around max-lg:text-xs lg:text-sm font-medium px-4 max-lg:py-1 gap-2 py-1 whitespace-nowrap">
-                                    <p className="text-zinc-100 flex items-center"><BiLogoTypescript className='lg:hidden block me-1 text-[16px]' />TypeScript</p>
-                                </div>
-                                <div className="bg-zinc-800/50 rounded-xs flex items-center justify-around max-lg:text-xs lg:text-sm font-medium px-4 max-lg:py-1 gap-2 py-1 whitespace-nowrap">
-                                    <p className="text-zinc-100 flex items-center"><BiLogoJavascript className='lg:hidden block me-1 text-[16px]' />JavaScript</p>
-                                </div>
-                                <div className="bg-zinc-800/50 rounded-xs flex items-center justify-around max-lg:text-xs lg:text-sm font-medium px-4 max-lg:py-1 gap-2 py-1 whitespace-nowrap">
-                                    <p className="text-zinc-100 flex items-center"><RiTailwindCssFill className='lg:hidden block me-1 text-[16px]' />TailwindCSS</p>
-                                </div>
-                                <div className="bg-zinc-800/50 rounded-xs flex items-center justify-around max-lg:text-xs lg:text-sm font-medium px-4 max-lg:py-1 gap-2 py-1 whitespace-nowrap">
-                                    <p className="text-zinc-100 flex items-center"><RiBootstrapFill className='lg:hidden block me-1 text-[16px]' />Bootstrap</p>
-                                </div>
-                                <div className="bg-zinc-800/50 rounded-xs flex items-center justify-around max-lg:text-xs lg:text-sm font-medium px-4 max-lg:py-1 gap-2 py-1 whitespace-nowrap">
-                                    <p className="text-zinc-100 flex items-center"><SiFramer className='lg:hidden block me-1 text-[16px]' />Framer Motion</p>
-                                </div>
-                                <div className="bg-zinc-800/50 rounded-xs flex items-center justify-around max-lg:text-xs lg:text-sm font-medium px-4 max-lg:py-1 gap-2 py-1 whitespace-nowrap">
-                                    <p className="text-zinc-100 flex items-center"><SiSass className='lg:hidden block me-1 text-[16px]' />Sass</p>
-                                </div>
-                                <div className="bg-zinc-800/50 rounded-xs flex items-center justify-around max-lg:text-xs lg:text-sm font-medium px-4 max-lg:py-1 gap-2 py-1 whitespace-nowrap">
-                                    <p className="text-zinc-100 flex items-center"><BiLogoFigma className='lg:hidden block me-1 text-[16px]' />Figma</p>
-                                </div>
+                            <div  className="flex custom-scrollbar lg:flex-wrap gap-2">
+                                {stackElement}
                             </div>
                         </div>
                     </div>

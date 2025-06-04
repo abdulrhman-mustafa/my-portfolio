@@ -43,7 +43,7 @@
     padding: 10px 0;
 }
 .custom-scrollbar::-webkit-scrollbar {
-    height: 15px;
+    height: 8px;
 }
 .custom-scrollbar::-webkit-scrollbar-track {
     background: transparent;
