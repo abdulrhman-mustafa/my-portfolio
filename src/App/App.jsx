@@ -17,7 +17,6 @@ const Contact = lazy(() => import('../Pages/Contact'));
 import { HashRouter , Routes, Route, Navigate } from 'react-router-dom';
 import { BeatLoader } from 'react-spinners';
 import MainContent from '../Components/MainContent';
-import Sidebar from '../Pages/Sidebar';
 
 const App = () => {
   
